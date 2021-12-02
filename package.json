@@ -4,6 +4,7 @@
   "description": "This assignment  will create a full CRUD web application that showcases everything I have learned in the MERN stack.",
   "main": "index.js",
   "scripts": {
+    "start": "npx nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

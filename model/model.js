@@ -1,7 +1,6 @@
-import mongoose from 'mongoose';
-let {Schema}=mongoose
+let mongoose=require('mongoose')
 
-const employeeSchema=new Schema({
+const EmployeeSchema=new mongoose.Schema({
     firstname:{
         type:String,
     required:[true,"First Name was not entered."]
@@ -13,9 +12,12 @@ const employeeSchema=new Schema({
     emailid:{
         type:String,
         required:[true,"Email was not entered."],
-        enum:{
-        match:[/.@/],
+       
+        match:/[(^?!(?=.*@)(?=.*.).+$]/,
         message:"Email is not in valid format."
-        }
+        
     }
 });
+
+const Employee=mongoose.model("Employee",EmployeeSchema)
+module.exports=Employee;
