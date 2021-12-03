@@ -13,7 +13,7 @@ const EmployeeSchema=new mongoose.Schema({
         type:String,
         required:[true,"Email was not entered."],
        
-        match:/[(^?!(?=.*@)(?=.*.).+$]/,
+        match:/^[[A-Za-z0-9]*@[A-Za-z0-9]*.[A-Za-z0-9]]*/,
         message:"Email is not in valid format."
         
     }
