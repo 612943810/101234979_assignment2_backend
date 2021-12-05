@@ -36,9 +36,8 @@ app.post("/api/v1/employees",async(req,res)=>{
            try{  
         
        await employeeModel.findByIdAndUpdate(req.params.id,req.body,{runValidators:true,returnOriginal:false,useFinfAndModify:false});  
-           
      await employeeModel.save();  
-      res.json("This employee has been updated.")
+
             }catch(employeeError){
                 res.status(500).json(employeeError)
             } 
