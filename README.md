@@ -11,5 +11,8 @@ To install run the following:
 ```
 git clone https://github.com/612943810/101234979_assignment2_backend.git
 npm install
-npm start 
+```
+To run:
+```
+npm start
 ```
