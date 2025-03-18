@@ -19,6 +19,7 @@
   "homepage": "https://github.com/612943810/101234979_assignment2_backend#readme",
   "devDependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "express": "^4.17.1",
     "mongoose": "^6.0.13",
     "nodemon": "^2.0.15"
